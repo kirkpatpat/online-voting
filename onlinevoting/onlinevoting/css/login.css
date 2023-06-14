@@ -1,0 +1,91 @@
+/* KIRK */
+
+.container-login {
+    /* padding-top: 5rem;   */
+    height: 100vh;
+    /* background-color: #358597; */
+}
+
+.container-login .login {
+    padding-left: 150px;
+    padding-top: 150px;
+}
+
+.container-login .center {
+    margin: auto;
+    width: 300px;
+    height: 540px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    filter: drop-shadow(0 0 0.25rem black);
+}
+
+.container-login .back-center {
+    margin: auto;
+    width: 370px;
+    height: 450px;
+    border-radius: 25px;
+    background-color: white;
+    padding-top: 145px;
+    margin-bottom: -500px;
+    filter: drop-shadow(0 0 0.25rem black);
+}
+
+.container-login .center-element {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-login .btn-login {
+    background-color: #285BAA;
+    border: none;
+    color: white;
+    padding: 12px 100px 16px 100px;
+    font-size: 16px;
+    cursor: pointer; 
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.container-login .btn-register {
+    background-color: #285BAA;
+    border: none;
+    color: white;
+    padding: 12px 90px 16px 90px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.container-login .input-icons i {
+    position: absolute;
+}
+ 
+.container-login .input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+ 
+.container-login .icon {
+    padding: 10px;
+    color: black;
+    min-width: 50px;
+    text-align: center;
+}
+ 
+.container-login input {
+    padding: 10px;
+    padding-right: 60px;
+    padding-left: 50px;
+    text-align: center;
+    /* margin-left: 10px; */
+    border-radius: 10px;
+}
+
+.container-login .btn-login:hover,
+.container-login .signup-link:hover {
+    opacity: 0.9;
+}
