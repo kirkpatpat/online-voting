@@ -1,0 +1,328 @@
+.register-container {
+    display: flex;
+    padding-left: 250px;
+    justify-content: center;
+    width: 100%;
+}
+
+.register-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.register-form sup {
+    color: crimson;
+    font-weight: normal;
+}
+
+input {
+    border-radius: 0.2rem;
+}
+
+.register-form label {
+    font-size: 1.2rem;
+}
+
+.register-form input[type="checkbox"] {
+    width: 1rem;
+    height: 1.8rem;
+}
+
+.register-form input[type="text"] {
+    padding: 0.7rem;
+    font-size: 1.3rem;
+}
+
+.register-form input[type="password"] {
+    padding: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.register-form input[type="radio"] {
+    width: 1.5rem;
+    height: 3rem;
+}
+
+.register-form p {
+    font-size: 1rem;
+}
+
+.container-register {  
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    /* grid-template-rows: 1.46fr 1.39fr 0.74fr 0.3fr 1.21fr; */
+    /* grid-template-rows: 1.46fr 1.39fr 0.74fr 0.3fr 0.7fr; */
+    grid-template-rows: 1.21fr 1.39fr 0.74fr 0.3fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". sex"
+      "period-of-residence sex"
+      "period-of-residence civil-status"
+      ". civil-status";
+    padding-top: 5rem;
+    height: 100%;
+    width: 70%;
+}
+
+.container-register {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "name"
+        "supp-info"
+        "residence-address"
+        "sex"
+        "period-of-residence"
+        "civil-status"
+        "password";
+    grid-template-rows: 0.7fr 0.5fr 0.5fr 0.8fr 0.5fr 0.5fr 0.8fr;
+}
+
+.container-register .name {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+.container-register > div {
+    border: 1px solid black;
+}
+  
+.container-register .sex { 
+    grid-area: sex; 
+}
+
+.container-register .period-of-residence {
+    grid-area: period-of-residence; 
+}
+
+.container-register .civil-status { 
+    grid-area: civil-status; 
+}
+
+.container-register .group-title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 3rem;  
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.container-register .grid-name {
+    display: grid;
+    width: 80%;
+    grid-column-gap: 2rem;
+    grid-row-gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.container-register .grid-name label {
+    grid-column: 1 / 2;
+    
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.container-register .grid-name input {
+    grid-column: 2 / 3;
+
+    padding: 0.5rem;
+    
+}
+
+.supp-info {
+    grid-area: supp-info;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.supp-info-item {
+    display: flex;
+    margin-left: 1rem;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.supp-info-item:last-of-type {
+    flex-direction: column;
+}
+
+.supp-info-item .assisted-by-container {
+    margin-bottom: 1rem;
+}
+
+.residence-address {
+    grid-area: residence-address;
+}
+
+.residence-address-grid {
+    display: grid;
+    grid-row-gap: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    align-items: center;
+}
+
+.residence-address-grid label {
+    grid-column: 1 / 2;
+    text-align: right;
+    margin-right: 4rem;
+}
+
+.residence-address-grid input {
+    grid-column: 2 / 3;
+    text-align: left;
+    margin-right: 1.2rem;
+}
+
+.container-register .sex .sex-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sex .sex-flex > div {
+    display: flex;
+    align-items: center;
+}
+
+.sex .sex-flex input {
+    margin-right: 1rem;
+}
+
+.dob-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.dob-container > input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.pob-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pob-flex * {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.por-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    margin: 1rem 0;
+}
+
+.por-title {
+    margin-right: 1rem;
+}
+
+.por-item-flex { 
+    display: flex;
+    flex-direction: column;
+}
+
+.por-margin {
+    display: flex;
+    font-size: 1.2rem;
+    /* align-content: center; */
+}
+
+.por-margin div:first-of-type {
+    display: flex;
+    align-items: center;
+}
+
+.por-margin input[type="number"] {
+    width: 75%;
+    padding: 0.5rem;
+}
+
+.por-margin label {
+    margin-bottom: 1rem;
+}
+
+.civil-status-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.civil-status-flex label {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.spouse-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spouse-name-container input {
+    width: 80%;
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.spouse-name-container label {
+    margin-top: 1rem;
+}
+
+.register-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.register-submit input {
+    padding: 1rem 3rem;
+    border: 1px solid #3E8C6A;
+    background-color: #3E8C6A;
+    font-size: 2rem;
+    color: ghostwhite;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.register-submit input:hover {
+    opacity: 0.9;
+}
+
+.password {
+    grid-area: password;
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password-container input {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.password .confirm-password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password .confirm-password-container input {
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
